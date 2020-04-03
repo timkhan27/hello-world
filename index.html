@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+
+.left_column
+{
+ float:left;
+ border: 1px solid black;
+ width: 800px;
+ height: 700px;
+}
+
+.right_column
+{
+ float:right;
+ border: 1px solid black;
+ width: 150px;
+ height: 700px;
+}
+
+.block1
+{
+ width:60px;
+ height:25px;
+ background-color: lightgreen;
+ position: absolute;
+ left: 300px;
+ top: 250px;
+}
+
+.player
+{
+ width:25px;
+ height:25px;
+ border-radius:25px;
+ background-color: green;
+ position: absolute;
+ left:320px;
+ top:210px;
+}
+
+</style>
+</head>
+
+<body>
+
+ <div class="left_column">
+  left column
+  <div class="player" id="pl">
+    
+  </div> 
+  <div class="block1" id="bl">
+
+  </div>
+    	
+ </div>
+
+ <div class="right_column">
+  right column
+ </div>
+
+<script>
+
+document.addEventListener('keydown', function(event) {
+  
+    console.log(event.keyCode); 
+});
+
+</script>
+
+</body>
+
+</html>
